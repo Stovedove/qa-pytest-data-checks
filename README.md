@@ -17,3 +17,14 @@ qa-data-checks run
 Variables de entorno:
 - DATA_CHECKS_CSV_PATH
 - DATA_CHECKS_REPORT_PATH
+
+## Ejemplo rapido
+qa-data-checks run --csv data/invalid_users.csv
+
+## Reporte
+Se guarda en `reports/latest.json` con resultados por fila y duplicados.
+
+## Estructura
+- data_checks/: loader, reglas, cli
+- data/: csv de ejemplo
+- tests/: unit tests
