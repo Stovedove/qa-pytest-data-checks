@@ -1,0 +1,5 @@
+id,name,email,age,active
+1,Ana,ana@mail.com,24,true
+2,Luis,luis@mail.com,31,true
+3,Sofia,sofia@mail.com,28,false
+4,Pedro,pedro@mail.com,22,true
