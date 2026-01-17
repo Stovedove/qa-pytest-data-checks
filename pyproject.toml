@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qa-data-checks"
+version = "0.1.0"
+description = "Validaciones basicas de datos CSV"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Stove Dove", email = "stovedove@users.noreply.github.com"}]
+dependencies = [
+  "click>=8.1.7",
+  "pydantic>=2.5.0",
+  "pydantic-settings>=2.1.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4.0"
+]
+
+[project.scripts]
+qa-data-checks = "data_checks.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

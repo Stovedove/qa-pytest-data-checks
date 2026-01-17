@@ -3,3 +3,4 @@ id,name,email,age,active
 2,Luis,luis@mail.com,31,true
 3,Sofia,sofia@mail.com,28,false
 4,Pedro,pedro@mail.com,22,true
+5,Carla,carla@mail.com,44,true

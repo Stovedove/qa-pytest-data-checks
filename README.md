@@ -1,14 +1,19 @@
-# QA Pytest Data Checks
+# QA Data Checks (Pytest)
 
-Validaciones simples sobre un CSV con pytest.
+Validador de datos CSV con CLI y pruebas unitarias.
 
 ## Requisitos
 - Python 3.10+
 
-## Setup
+## Instalar
 python -m venv .venv
 .\.venv\Scripts\activate
-pip install -r requirements.txt
+pip install -e .
 
 ## Ejecutar
-pytest -q
+qa-data-checks run
+
+## Configuracion
+Variables de entorno:
+- DATA_CHECKS_CSV_PATH
+- DATA_CHECKS_REPORT_PATH
